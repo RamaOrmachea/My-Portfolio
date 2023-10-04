@@ -1,0 +1,175 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font: normal 75% Arial, Helvetica, sans-serif;
+}
+body {
+  overflow: hidden; 
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* --- --- --- --- HEADER --- --- --- --- */
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #ffffff; /* Set the background color */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 10px 0; /* Increase the padding top and bottom */
+  z-index: 1;
+  transition: background-color 0.3s; /* Add transition for background color */
+}
+
+#headerList {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-weight: 900;
+  
+}
+
+#headerList li {
+  margin: 0 20px; /* Increase the horizontal spacing between list items */
+  font-size: 18px; /* Increase the font size */
+  color: #333333; /* Set the font color */
+}
+
+#headerList li:first-child {
+  margin-left: 0;
+}
+
+#headerList li:last-child {
+  margin-right: 0; /* Remove margin on the last list item */
+}
+
+#navbar{
+  display: flex;
+  justify-content: space-around;
+}
+
+@media all and (min-width: 769px) {
+  #header:hover {
+    background-color: #999999; /* Set the background color on hover */
+    transition: background-color 0.3s; /* Add transition for background color */
+  }
+  
+  #header:hover #headerList li {
+    color: #ffffff; /* Change the font color of li elements on hover */
+  
+  }
+}
+
+/* Apply the hover effect to the entire #header container */
+
+
+#headerList li:hover:not(.lilogo) {
+  transform: scale(1.2); /* Scale the li element to 110% on hover */
+  cursor: pointer; /* Change cursor to pointer on hover for better user feedback */
+}
+
+.logo{
+  width: 40px;
+  height: auto;
+}
+
+/* --- --- --- --- SECTION --- --- --- --- */
+
+
+#main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#title{ font-family: 'Roboto', sans-serif;
+    color: #333333;
+  font-size: 65px;}
+
+#subtitle{font-size: 20px;
+  color: #333333;}
+
+
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#particles-js{
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5f5;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+
+/* Add styles for the hamburger menu icon */
+#hamburger {
+   display: none;
+  font-size: 24px; /* Adjust the size of the hamburger icon */
+  cursor: pointer;
+}
+
+/* Hide the navigation links by default on smaller screens */
+@media screen and (max-width: 768px) {
+
+  #headerList.active {
+    display: flex;
+    flex-direction: column;
+   
+  }
+
+  #navbar{
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  #hamburger {
+    display: block;
+    display: flex;
+    align-items: center;
+  }
+
+  #headerList {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff; /* Background color for mobile menu */
+    position: absolute;
+    top: 83px; /* Adjust the top position as needed */
+    left: 0;
+    width: 100%;
+    padding: 20px 0; /* Adjust padding as needed */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+
+  }
+
+  #headerList.active li {
+    margin: 10px 0; /* Adjust margin as needed */
+    font-size: 18px;
+    color: #333333;
+    transition: transform 0.1s;
+  }
+
+
+}
