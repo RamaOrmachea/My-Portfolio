@@ -21,11 +21,11 @@ html, body {
   top: 0;
   left: 0;
   width: 100%;
-  background: #ffffff; /* Set the background color */
+  background: #ffffff; 
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-  padding: 10px 0; /* Increase the padding top and bottom */
+  padding: 10px 0; 
   z-index: 1;
-  transition: background-color 0.3s; /* Add transition for background color */
+  transition: background-color 0.3s; 
 }
 
 #headerList {
@@ -40,9 +40,9 @@ html, body {
 }
 
 #headerList li {
-  margin: 0 20px; /* Increase the horizontal spacing between list items */
-  font-size: 18px; /* Increase the font size */
-  color: #333333; /* Set the font color */
+  margin: 0 20px; 
+  font-size: 18px; 
+  color: #333333; 
 }
 
 #headerList li:first-child {
@@ -50,7 +50,7 @@ html, body {
 }
 
 #headerList li:last-child {
-  margin-right: 0; /* Remove margin on the last list item */
+  margin-right: 0; 
 }
 
 #navbar{
@@ -60,22 +60,19 @@ html, body {
 
 @media all and (min-width: 769px) {
   #header:hover {
-    background-color: #999999; /* Set the background color on hover */
-    transition: background-color 0.3s; /* Add transition for background color */
+    background-color: #999999; 
+    transition: background-color 0.3s; 
   }
   
   #header:hover #headerList li {
-    color: #ffffff; /* Change the font color of li elements on hover */
+    color: #ffffff; 
   
   }
 }
 
-/* Apply the hover effect to the entire #header container */
-
-
 #headerList li:hover:not(.lilogo) {
-  transform: scale(1.2); /* Scale the li element to 110% on hover */
-  cursor: pointer; /* Change cursor to pointer on hover for better user feedback */
+  transform: scale(1.2);
+  cursor: pointer; 
 }
 
 .logo{
@@ -147,7 +144,7 @@ canvas {
 }
 
 #contactForm {
-  background-color: rgba(255, 255, 255, 0.9); /* Add a semi-transparent white background to the form */
+  background-color: rgba(255, 255, 255, 0.9); 
   padding: 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
@@ -191,14 +188,13 @@ canvas {
 }
 
 
-/* Add styles for the hamburger menu icon */
 #hamburger {
    display: none;
-  font-size: 24px; /* Adjust the size of the hamburger icon */
+  font-size: 24px; 
   cursor: pointer;
 }
 
-/* Hide the navigation links by default on smaller screens */
+
 @media screen and (max-width: 768px) {
 
   #headerList.active {
@@ -223,12 +219,12 @@ canvas {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: #ffffff; /* Background color for mobile menu */
+    background-color: #ffffff; 
     position: absolute;
-    top: 83px; /* Adjust the top position as needed */
+    top: 83px; 
     left: 0;
     width: 100%;
-    padding: 20px 0; /* Adjust padding as needed */
+    padding: 20px 0; 
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
     z-index: 1;
     transition: all 0.3s ease-in-out;
@@ -236,7 +232,7 @@ canvas {
   }
 
   #headerList.active li {
-    margin: 10px 0; /* Adjust margin as needed */
+    margin: 10px 0; 
     font-size: 18px;
     color: #333333;
     transition: transform 0.1s;
