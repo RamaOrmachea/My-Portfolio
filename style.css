@@ -80,7 +80,7 @@ a:visited {
 /* --- --- --- --- HOME --- --- --- --- */
 
 #inicio-container {
-  height: 80px; /* Adjust the height as needed */
+  height: 80px;
   visibility: hidden;
 }
 
@@ -166,12 +166,8 @@ canvas {
   margin: 20px;
   padding: 20px;
   border-radius: 5px;
-  transition: transform 0.3s;
 }
 
-.project-card:hover {
-  transform: scale(1.05);
-}
 
 .project-card img {
   width: 100%;
@@ -200,37 +196,61 @@ canvas {
   margin: 0 10px;
 }
 
-.project-links a:hover {
-  color: #555555;
-}
-
 .carousel {
+  position: relative;
   list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  overflow: hidden;
 }
 
-.carousel li {
+.carousel__item {
+  padding: 3px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  color: #ffffff;
+  display: none;
+  overflow: hidden; 
+}
+
+.carousel__item img {
+  width: 100%; 
+  height: auto; 
+  max-height: 100%; 
+}
+
+.carousel__item--selected {
+  display: block;
+}
+
+.carousel__nav {
   width: 100%;
-  flex: 0 0 100%;
-  transition: transform 0.5s;
+  position: absolute;
+  bottom: 100;
+  left: 0;
+  text-align: center;
 }
 
-.project-card:hover .carousel {
-  transform: translateX(-100%);
+.carousel__button {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background: rgba(10, 10, 10, 0.8);
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
 }
+
+.carousel__button--selected {
+  background: rgba(0, 0, 0, 0.2);
+}
+
 
 
 /* --- --- --- --- About Me and Skills --- --- --- --- */
 
 
-
-
 #Herramientas {
   position: absolute;
-  top: 200vh; /* Adjust the top position as needed */
+  top: 250vh; 
   left: 50%;
   width: 70%;
   transform: translate(-50%, 0);
@@ -260,7 +280,7 @@ canvas {
 }
 
 .skill:hover {
-  transform: scale(1.05); /* Increases size slightly on hover */
+  transform: scale(1.05); 
 }
 
 
@@ -274,7 +294,7 @@ canvas {
 
 #contact {
   position: absolute;
-  top: 250vh; 
+  top: 300vh; 
   left: 50%;
   transform: translate(-50%, 40%);
   width: 50vh;
