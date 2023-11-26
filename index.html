@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css" integrity="sha512-W/zrbCncQnky/EzL+/AYwTtosvrM+YG/V6piQLSe2HuKS6cmbw89kjYkp3tWFn1dkWV7L1ruvJyKbLz73Vlgfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" media="screen" href="style.css">
     <link rel="icon" href="images/URLlogo1.png" type="images/x-icon">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script defer src="send_email.js"></script>
     <title>Ramiro Ormachea</title>
 </head>
 <body>
@@ -92,7 +94,7 @@
     </div>
     <div class="skill">
         <img src="images/JavaScript.png" alt="HTML">
-        <span>JavaScript</span>
+        <span>Javascript</span>
     </div>
     <div class="skill">
         <img src="images/Java.png" alt="HTML">
@@ -124,7 +126,7 @@
     <h2>Contact Me</h2>
     <p>If you have any questions or want to get in touch, please fill out the form below:</p>
     
-    <form id="contactForm" action="send_email.php" method="POST">
+    <form id="contactForm" action="#" method="POST">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
         
@@ -134,8 +136,10 @@
         <label for="message">Message:</label>
         <textarea id="message" name="message" rows="4" required></textarea>
         
-        <button type="submit">Send Email</button>
+        <button type="submit" id="sendButton">Send Email</button>
+
     </form>
+
 </section>
 
 <div id="particles-js"></div> 
@@ -143,6 +147,14 @@
 <script src="particles.js"></script>
 <script src="functions.js"></script>
 <script src="carrousel.js"></script>
+
+<div id="successModal" class="modal">
+    <div class="modal-content">
+        <img src="images/icons8-check.gif" alt="GIF Icon" class="gif-icon">
+        <span id="closeModalButton" class="close">&times;</span>
+        <p>Your email was sent successfully!</p>
+    </div>
+</div>
 
 </body>
 </html>
