@@ -205,7 +205,7 @@ input.check-toggle-round-flat:checked + label:after {
 
 .social-button {
   display: inline-block;
-  margin: 0 10px;
+  margin: 10px 10px;
   padding: 15px 25px;
   text-decoration: none;
   color: #ffffff;
@@ -253,7 +253,7 @@ canvas {
   left: 50%;
   transform: translate(-50%, 0);
   padding: 20px;
-  width: 60%;
+  width: 70%;
   text-align: center;
   top: 100vh;
   z-index: 1;
@@ -309,12 +309,13 @@ canvas {
   color: #ffffff;
   display: none;
   overflow: hidden; 
+  height: 60vh;
 }
 
 .carousel__item img {
+  object-fit: cover;
+  height: 100%;
   width: 100%; 
-  height: auto; 
-  max-height: 100%; 
 }
 
 .carousel__item--selected {
@@ -350,7 +351,7 @@ canvas {
 
 #Herramientas {
   position: absolute;
-  top: 250vh; 
+  top: 225vh; 
   left: 50%;
   width: 70%;
   transform: translate(-50%, 0);
@@ -540,7 +541,28 @@ canvas {
   cursor: pointer;
 }
 
+@media screen and (max-width: 895px) {
 
+
+
+#Herramientas {
+  width: 90%; 
+}
+
+.skill {
+  width: 100px; 
+  margin: 25px; 
+}
+
+.skill img {
+  width: 90px; 
+}
+
+}
+/* --- --- --- --- MEDIA SCREEN 768px --- --- --- --- */
+
+
+/* --- --- --- --- HEADER 768px --- --- --- --- */
 @media screen and (max-width: 768px) {
 
   #headerList.active {
@@ -582,6 +604,19 @@ canvas {
     font-size: 18px;
     color: #333333;
     transition: transform 0.1s;
+  }
+
+
+  /* --- --- --- --- SKILLS 768px --- --- --- --- */
+
+ 
+  .skill {
+    width: 100px; 
+    margin: 20px; 
+  }
+
+  .skill img {
+    width: 70px;
   }
 
 
