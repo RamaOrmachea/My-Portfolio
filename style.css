@@ -25,6 +25,11 @@ a:visited {
 }
 /* --- --- --- --- HEADER --- --- --- --- */
 
+#inicio-container {
+  height: 80px;
+  visibility: hidden;
+}
+
 #header {
   position: fixed;
   top: 0;
@@ -185,10 +190,6 @@ input.check-toggle-round-flat:checked + label:after {
 
 /* --- --- --- --- HOME --- --- --- --- */
 
-#inicio-container {
-  height: 80px;
-  visibility: hidden;
-}
 
 #main {
   position: absolute;
@@ -309,7 +310,7 @@ canvas {
   color: #ffffff;
   display: none;
   overflow: hidden; 
-  height: 60vh;
+  height: auto;
 }
 
 .carousel__item img {
@@ -346,7 +347,7 @@ canvas {
 
 
 
-/* --- --- --- --- About Me and Skills --- --- --- --- */
+/* --- --- --- --- Skills --- --- --- --- */
 
 
 #Herramientas {
@@ -559,7 +560,11 @@ canvas {
 }
 
 }
-/* --- --- --- --- MEDIA SCREEN 768px --- --- --- --- */
+/* --- --- --- --- MEDIA SCREEN --- --- --- --- */
+
+
+
+
 
 
 /* --- --- --- --- HEADER 768px --- --- --- --- */
@@ -606,18 +611,99 @@ canvas {
     transition: transform 0.1s;
   }
 
+   /* --- --- --- --- HOME768px --- --- --- --- */
+
+  
+
+   #title {
+    font-size: 55px;
+  
+   }
+   #subtitle {
+     font-size: 24px;
+   }
+   
+   #main {
+    top: 55%;
+    left: 50%;
+  }
+  
+  .social-button {
+    display: inline-block;
+    margin: 5px 5px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    color: #333333;
+  }
+
+/* --- --- --- --- Proyectos 768px --- --- --- --- */
+
+#proyectos {
+  padding: 0px;
+  width: 90%;
+  top: 100vh;
+}
+
+.project-card h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.project-card {
+  margin-left:  5px;
+  margin-right: 5px;
+  padding: 5px;
+}
+
+.project-card p {
+  font-size: 14px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.project-links a {
+  font-size: 20px;
+  margin: 0 6px;
+}
 
   /* --- --- --- --- SKILLS 768px --- --- --- --- */
 
+
+  #Herramientas {
+    width: 90%;
+    top: 200vh; 
+  }
  
   .skill {
-    width: 100px; 
-    margin: 20px; 
+    width: 80px; 
+    margin: 10px; 
   }
 
   .skill img {
-    width: 70px;
+    width: 55px;
   }
 
+  #contact {
+    position: absolute;
+    top: 300vh; 
+    left: 50%;
+    transform: translate(-50%, 40%);
+    width: 50vh;
+    text-align: center;
+    z-index: 1;
+  }
+
+  /* --- --- --- --- CONTACT 768px --- --- --- --- */
+
+  #contact {
+    top: 275vh; 
+  }
+  /* --- --- --- --- FOOTER 768px --- --- --- --- */
+#footer {
+  padding: 5px;
+  top: 425%;
+  font-size: 14px;
+}
 
 }
