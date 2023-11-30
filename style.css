@@ -24,7 +24,7 @@ a:visited {
   visibility: hidden;
 }
 #Atools.anchor {
-  top: -37.5vh;
+  top: -32.5vh;
 }
 /* --- --- --- --- HEADER --- --- --- --- */
 #inicio-container {
@@ -318,9 +318,7 @@ canvas {
   left: 50%;
   width: 70%;
   transform: translate(-50%, 0);
-  background-color: rgba(255, 255, 255, 0.9);
   padding: 20px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
   z-index: 1;
 }
@@ -330,6 +328,13 @@ canvas {
   color: #333333;
   margin-bottom: 20px;
 }
+
+#skillsContainer {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
 .skill {
   display: inline-block;
   width: 150px;
@@ -369,9 +374,10 @@ canvas {
   margin-bottom: 30px;
 }
 #contactForm {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: #ffffff;
   padding: 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
 }
 #contactForm label {
   display: block;
@@ -406,7 +412,7 @@ canvas {
 }
 /* --- --- --- --- FOOTER --- --- --- --- */
 #footer {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: #ffffff;
   color: #ffffff;
   text-align: center;
   padding: 10px;
@@ -543,7 +549,7 @@ canvas {
  /* --- --- --- --- Proyectos 768px --- --- --- --- */
   #proyectos {
       padding: 0px;
-      width: 90%;
+      width: 100%;
  }
   .project-card h3 {
       font-size: 20px;
@@ -559,13 +565,19 @@ canvas {
       padding: 0px;
       margin: 0px;
  }
+
+ .project-card p.description {
+  font-size: 11.5px;
+  margin-top: 5px;
+  font-family: 'Roboto', sans-serif; 
+}
   .project-links a {
       font-size: 20px;
       margin: 0 6px;
  }
  /* --- --- --- --- SKILLS 768px --- --- --- --- */
   #Herramientas {
-      width: 90%;
+      width: 100%;
  }
   .skill {
       width: 80px;
