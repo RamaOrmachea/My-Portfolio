@@ -20,6 +20,18 @@ a:link, a:visited {
 a:visited {
   color: #333333;
 }
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -17.5vh;
+  visibility: hidden;
+}
+
+#Atools.anchor {
+  top: -37.5vh; 
+}
+
 /* --- --- --- --- HEADER --- --- --- --- */
 
 #inicio-container {
@@ -213,6 +225,7 @@ input.check-toggle-round-flat:checked + label:after {
   transition: background-color 0.3s;
   font-family: 'Roboto', sans-serif;
   color: #333333;
+  width: 150px; 
 }
 
 .social-button:hover {
@@ -251,8 +264,8 @@ canvas {
   transform: translate(-50%, 0);
   padding: 20px;
   width: 70%;
+  margin-top: 75vh;
   text-align: center;
-  top: 100vh;
   z-index: 1;
 }
 
@@ -348,7 +361,7 @@ canvas {
 
 #Herramientas {
   position: relative;
-  top: 225vh; 
+  margin-top: 25vh;
   left: 50%;
   width: 70%;
   transform: translate(-50%, 0);
@@ -392,7 +405,7 @@ canvas {
 
 #contact {
   position: relative;
-  top: 300vh; 
+  margin-top: 10vh;
   left: 50%;
   transform: translate(-50%, 40%);
   width: 40%;
@@ -464,8 +477,7 @@ canvas {
   text-align: center;
   padding: 10px;
   position: relative; 
-  top: 325%;
-  margin-top: 25vh;
+  margin-top: 40vh;
   width: 100%;
   z-index: 1;
   font-family: 'Roboto', sans-serif;
@@ -557,6 +569,7 @@ canvas {
 }
 
 }
+
 /* --- --- --- --- MEDIA SCREEN --- --- --- --- */
 
 /* --- --- --- --- HEADER 768px --- --- --- --- */
@@ -603,9 +616,7 @@ canvas {
     transition: transform 0.1s;
   }
 
-   /* --- --- --- --- HOME768px --- --- --- --- */
-
-  
+   /* --- --- --- --- HOME 768px --- --- --- --- */
 
    #title {
     font-size: 55px;
@@ -621,12 +632,9 @@ canvas {
   }
   
   .social-button {
-    display: inline-block;
     margin: 5px 5px;
     padding: 10px 15px;
-    border-radius: 5px;
-    font-family: 'Roboto', sans-serif;
-    color: #333333;
+    width: 125px;
   }
 
 /* --- --- --- --- Proyectos 768px --- --- --- --- */
@@ -634,7 +642,6 @@ canvas {
 #proyectos {
   padding: 0px;
   width: 90%;
-  top: 100vh;
 }
 
 .project-card h3 {
@@ -664,7 +671,6 @@ canvas {
 
   #Herramientas {
     width: 90%;
-    top: 200vh; 
   }
  
   .skill {
@@ -677,19 +683,21 @@ canvas {
   }
 
 
-  /* --- --- --- --- CONTACT 768px --- --- --- --- */
+/* --- --- --- --- CONTACT 768px --- --- --- --- */
 
-  #contact {
-    top: 275vh; 
-    width: 85%;
-  }
-  /* --- --- --- --- FOOTER 768px --- --- --- --- */
+#contact {
+  width: 85%;
+}
+  
+/* --- --- --- --- FOOTER 768px --- --- --- --- */
+
 #footer {
   padding: 5px;
   font-size: 14px;
+  margin-top: 50vh;
 }
 
-/* --- --- --- --- MODAL --- --- --- --- */
+/* --- --- --- --- MODAL 768px --- --- --- --- */
 
 .modal-content {
   width: 75%; 
