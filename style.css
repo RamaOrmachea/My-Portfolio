@@ -538,7 +538,7 @@ canvas {
       font-size: 24px;
  }
   #main {
-      top: 40%;
+      top: 42.5%;
       left: 50%;
  }
   .social-button {
@@ -550,6 +550,7 @@ canvas {
   #proyectos {
       padding: 0px;
       width: 100%;
+      margin-top: 35vh;
  }
   .project-card h3 {
       font-size: 20px;
@@ -589,6 +590,7 @@ canvas {
  /* --- --- --- --- CONTACT 768px --- --- --- --- */
   #contact {
       width: 85%;
+      margin-top: 0vh;
  }
  /* --- --- --- --- FOOTER 768px --- --- --- --- */
   #footer {

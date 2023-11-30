@@ -42,6 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
       document.getElementById('footer').querySelector('p').textContent = '© 2023 Ramiro Elian Ormachea. Todos los derechos reservados.';
 
       cvLinks.forEach(function (cvLink) {
+        cvLink.innerHTML = '<i class="fas fa-file-pdf"></i> Ver CV';
         cvLink.href = 'files/Cv Ormachea Ramiro.pdf';
       });
     }
@@ -85,6 +86,7 @@ document.addEventListener('DOMContentLoaded', function () {
       document.getElementById('footer').querySelector('p').textContent = '© 2023 Ramiro Elian Ormachea. All rights reserved.';
 
       cvLinks.forEach(function (cvLink) {
+        cvLink.innerHTML = '<i class="fas fa-file-pdf"></i> View CV';
         cvLink.href = 'files/Cv - Ramiro Ormachea E.pdf';
       });
     }
