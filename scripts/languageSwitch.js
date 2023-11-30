@@ -20,8 +20,12 @@ document.addEventListener('DOMContentLoaded', function () {
             break;
         }
       });
+
+      document.getElementById('main').querySelector('h2').textContent = 'Desarrollador Backend'
   
       document.getElementById('proyectos').querySelector('h2').textContent = 'Proyectos';
+      document.getElementById('proyectos').querySelector('p').textContent = 'Rol: Desarrollador Backend';
+      document.getElementById('proyectos').querySelector('p.description').innerHTML = 'Greenpoint es una web en la cual ganas puntos por reciclar y puedes canjearlos por premios. <br><br>Proyecto grupal hecho en NoCountry';
   
       document.getElementById('Herramientas').querySelector('h2').textContent = 'Herramientas';
      
@@ -59,10 +63,14 @@ document.addEventListener('DOMContentLoaded', function () {
             break;
         }
       });
+
+      document.getElementById('main').querySelector('h2').textContent = 'Backend Developer'
   
       document.getElementById('proyectos').querySelector('h2').textContent = 'Proyects';
-  
-      document.getElementById('Herramientas').querySelector('h2').textContent = 'Tools';
+      document.getElementById('proyectos').querySelector('p').textContent = 'Role: Backend Developer';
+      document.getElementById('proyectos').querySelector('p.description').innerHTML = 'Greenpoint is a website where you earn points for recycling, and you can redeem them for prizes. <br><br>Group project made in NoCountry';
+
+      document.getElementById('Herramientas').querySelector('h2').textContent = 'Skills';
    
       document.getElementById('contact').querySelector('h2').textContent = 'Contact Me';
       document.getElementById('contact').querySelector('p').textContent = 'If you have any questions or want to get in touch, please fill out the form below:';
