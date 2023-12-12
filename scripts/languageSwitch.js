@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       });
 
-      document.getElementById('main').querySelector('h2').textContent = 'Desarrollador Backend'
+      document.getElementById('main').querySelector('h2').textContent = 'Desarrollador FullStack'
 
       document.getElementById('proyectos').querySelector('h2').textContent = 'Proyectos';
       document.getElementById('project-card1').querySelector('p').textContent = 'Rol: Desarrollador FullStack';
@@ -67,10 +67,10 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       });
 
-      document.getElementById('main').querySelector('h2').textContent = 'Backend Developer'
+      document.getElementById('main').querySelector('h2').textContent = 'FullStack Developer'
   
       document.getElementById('proyectos').querySelector('h2').textContent = 'Projects';
-      document.getElementById('project-card1').querySelector('p').textContent = 'Role: Backend Developer';
+      document.getElementById('project-card1').querySelector('p').textContent = 'Role: FullStack Developer';
       document.getElementById('project-card1').querySelector('p.description').innerHTML = 'FilmBook is a photographic equipment booking platform where you can rent products. <br><br>Final group project made in DigitalHouse';
       document.getElementById('project-card2').querySelector('p').textContent = 'Role: Backend Developer';
       document.getElementById('project-card2').querySelector('p.description').innerHTML = 'Greenpoint is a website where you earn points for recycling, and you can redeem them for prizes. <br><br>Group project made in NoCountry';
