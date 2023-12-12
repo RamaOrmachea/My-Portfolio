@@ -22,10 +22,12 @@ document.addEventListener('DOMContentLoaded', function () {
       });
 
       document.getElementById('main').querySelector('h2').textContent = 'Desarrollador Backend'
-  
+
       document.getElementById('proyectos').querySelector('h2').textContent = 'Proyectos';
-      document.getElementById('proyectos').querySelector('p').textContent = 'Rol: Desarrollador Backend';
-      document.getElementById('proyectos').querySelector('p.description').innerHTML = 'Greenpoint es una web en la cual ganas puntos por reciclar y puedes canjearlos por premios. <br><br>Proyecto grupal hecho en NoCountry';
+      document.getElementById('project-card1').querySelector('p').textContent = 'Rol: Desarrollador FullStack';
+      document.getElementById('project-card1').querySelector('p.description').innerHTML = 'FilmBook es una plataforma de alquiler de equipos fotográficos. <br><br>Proyecto grupal final realizado en DigitalHouse';
+      document.getElementById('project-card2').querySelector('p').textContent = 'Rol: Desarrollador Backend';
+      document.getElementById('project-card2').querySelector('p.description').innerHTML = 'Greenpoint es una web en la cual ganas puntos por reciclar y puedes canjearlos por premios. <br><br>Proyecto grupal hecho en NoCountry';
   
       document.getElementById('Herramientas').querySelector('h2').textContent = 'Herramientas';
      
@@ -67,9 +69,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
       document.getElementById('main').querySelector('h2').textContent = 'Backend Developer'
   
-      document.getElementById('proyectos').querySelector('h2').textContent = 'Proyects';
-      document.getElementById('proyectos').querySelector('p').textContent = 'Role: Backend Developer';
-      document.getElementById('proyectos').querySelector('p.description').innerHTML = 'Greenpoint is a website where you earn points for recycling, and you can redeem them for prizes. <br><br>Group project made in NoCountry';
+      document.getElementById('proyectos').querySelector('h2').textContent = 'Projects';
+      document.getElementById('project-card1').querySelector('p').textContent = 'Role: Backend Developer';
+      document.getElementById('project-card1').querySelector('p.description').innerHTML = 'FilmBook is a photographic equipment booking platform where you can rent products. <br><br>Final group project made in DigitalHouse';
+      document.getElementById('project-card2').querySelector('p').textContent = 'Role: Backend Developer';
+      document.getElementById('project-card2').querySelector('p.description').innerHTML = 'Greenpoint is a website where you earn points for recycling, and you can redeem them for prizes. <br><br>Group project made in NoCountry';
 
       document.getElementById('Herramientas').querySelector('h2').textContent = 'Skills';
    
