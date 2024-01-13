@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       cvLinks.forEach(function (cvLink) {
         cvLink.innerHTML = '<i class="fas fa-file-pdf"></i> Ver CV';
-        cvLink.href = 'files/Cv Ormachea Ramiro.pdf';
+        cvLink.href = 'files/Cv - Ramiro Ormachea.pdf';
       });
     }
   
